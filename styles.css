@@ -943,3 +943,109 @@ img{height:auto}
   .faq-list-v21 summary{padding-right:42px}
   .faq-list-v21 details p{padding-right:30px}
 }
+
+/* ==========================================================
+   v25 — mobile polish + search identity
+   ========================================================== */
+html,body{max-width:100%;overflow-x:hidden}
+*,*::before,*::after{box-sizing:border-box}
+img,svg,video{max-width:100%}
+
+@media(max-width:760px){
+  .container{width:calc(100% - 32px);max-width:none;margin-inline:16px}
+  .header{min-height:72px}
+  .nav{height:72px;gap:14px}
+  .brand img{width:48px;height:48px;border-radius:12px}
+  .menu-btn{font-size:1.9rem;padding:8px 4px}
+
+  /* Mobile menu stays inside viewport */
+  .nav-links{top:72px!important;left:16px!important;right:16px!important;width:auto!important;max-height:calc(100dvh - 88px);overflow:auto;border-radius:16px!important}
+
+  /* Home */
+  .hero-v9{padding-top:72px}
+  .hero-grid-v9{grid-template-columns:1fr!important;gap:36px!important;min-height:0!important;padding:54px 0 68px!important}
+  .hero-copy-v9{max-width:100%}
+  .display-v9{font-size:clamp(3.2rem,16vw,4.9rem)!important;line-height:.84!important;overflow-wrap:anywhere}
+  .hero-summary{font-size:1rem!important;line-height:1.65!important}
+  .hero-actions{display:grid!important;grid-template-columns:1fr;gap:12px}
+  .hero-actions .btn{width:100%;justify-content:center;text-align:center}
+  .hero-media-v9{width:100%}
+  .hero-frame{padding:7px;border-radius:16px}
+  .hero-frame img{aspect-ratio:16/11!important;object-fit:cover}
+  .hero-caption{position:static!important;width:100%!important;margin-top:12px;padding:18px!important}
+
+  .section-v9{padding:78px 0!important}
+  .section-intro-v9{display:block!important;margin-bottom:42px!important}
+  .section-intro-v9 h2,.manual-copy-v9 h2,.story-v9-copy h2,.license-v9 h2,.contact-v9 h2,
+  .story-page-copy h2,.founder-copy-v16 h2,.achievement-copy-v16 h2{
+    font-size:clamp(2.45rem,12vw,3.9rem)!important;
+    line-height:.92!important;
+    overflow-wrap:anywhere;
+  }
+  .section-intro-v9 p{margin-top:24px!important}
+  .feature-row-v9,.feature-row-v9.reverse{grid-template-columns:1fr!important;gap:26px!important;padding:48px 0!important}
+  .feature-row-v9.reverse .feature-copy-v9,.feature-row-v9.reverse .feature-media-v9{order:initial!important}
+  .feature-copy-v9 h3{font-size:clamp(2.2rem,10vw,3.2rem)!important;overflow-wrap:anywhere}
+  .device-media{grid-template-columns:1fr!important}
+  .device-panel:first-child{border-right:0!important;border-bottom:1px solid var(--line)}
+  .system-gallery-v9,.system-gallery-clean{grid-template-columns:1fr!important}
+  .system-main-v9 img{min-height:0!important;height:auto!important;object-fit:contain!important}
+  .system-side-v9 img{min-height:0!important;height:auto!important;object-fit:contain!important}
+  .story-v9-grid,.manual-shell-v9,.contact-v9-grid,.license-v9-shell{grid-template-columns:1fr!important;gap:42px!important}
+  .story-v9-visual{max-width:100%!important}
+  .manual-doc-v9{width:100%!important;max-width:360px}
+  .home-proof-shell-v21{grid-template-columns:1fr!important;padding:28px 0!important}
+  .benefits-strip-v20{border-left:0!important}
+  .faq-heading-v21 h2{font-size:clamp(2.5rem,12vw,3.8rem)!important}
+  .whatsapp-float-v20{right:14px!important;bottom:14px!important}
+
+  /* Inner page hero: remove the giant empty area on mobile */
+  .page-hero,.page-hero-v9{padding:118px 0 58px!important;min-height:0!important}
+  .page-hero h1,.page-hero-v9 h1{
+    font-size:clamp(3rem,13vw,4.6rem)!important;
+    line-height:.9!important;
+    max-width:100%!important;
+    overflow-wrap:anywhere;
+    word-break:normal;
+  }
+  .page-hero .lead,.page-hero-v9 .lead{font-size:1rem!important;line-height:1.65!important;max-width:100%!important}
+
+  /* License page */
+  .license-plans-section{padding-top:70px!important}
+  .pricing-grid-v16{display:grid!important;grid-template-columns:1fr!important;gap:20px!important;width:100%!important;max-width:100%!important}
+  .pricing-card-v16,.pricing-card-v16.featured-plan-v16{
+    width:100%!important;
+    min-width:0!important;
+    min-height:0!important;
+    padding:30px 22px 26px!important;
+    transform:none!important;
+    overflow:hidden;
+  }
+  .pricing-card-v16 h3{font-size:clamp(2rem,10vw,2.8rem)!important;overflow-wrap:anywhere}
+  .pricing-value{white-space:normal!important;min-width:0!important;align-items:baseline!important;flex-wrap:wrap}
+  .pricing-value span{font-size:1.55rem!important}
+  .pricing-value strong{font-size:clamp(3.2rem,18vw,4.7rem)!important;line-height:.9!important;max-width:100%;overflow-wrap:anywhere}
+  .pricing-quote strong{font-size:clamp(2.2rem,11vw,3.15rem)!important;line-height:.95!important;white-space:normal!important;overflow-wrap:anywhere}
+  .pricing-unit{font-size:1rem!important;margin-top:8px!important}
+  .pricing-card-v16>p{font-size:.96rem!important;line-height:1.65!important;margin-bottom:22px!important}
+  .pricing-card-v16 li{font-size:.9rem!important;padding:13px 0 13px 20px!important}
+  .pricing-btn{width:100%!important;display:flex!important;justify-content:center!important}
+  .popular-badge-v16{font-size:.66rem!important;right:18px!important}
+  .pricing-note-v16{padding:22px!important}
+  .license-support-grid-v16{grid-template-columns:1fr!important;gap:30px!important}
+  .license-support-v16 h2{font-size:clamp(2.5rem,12vw,3.8rem)!important;overflow-wrap:anywhere}
+
+  /* Our story */
+  .story-page-grid,.achievement-grid-v17,.founder-photo-grid-v16,.founder-band-grid{grid-template-columns:1fr!important;gap:30px!important}
+  .story-page-visual,.founder-photo-v16,.achievement-photo-v17{min-height:0!important}
+  .story-page-visual img,.founder-photo-v16 img,.achievement-photo-v17 img{height:auto!important;max-height:none!important;object-fit:contain!important}
+}
+
+@media(max-width:390px){
+  .container{width:calc(100% - 24px);margin-inline:12px}
+  .display-v9{font-size:clamp(2.9rem,16vw,4rem)!important}
+  .page-hero h1,.page-hero-v9 h1{font-size:clamp(2.65rem,13vw,3.7rem)!important}
+  .pricing-card-v16{padding-inline:18px!important}
+  .pricing-value strong{font-size:clamp(3rem,17vw,4.1rem)!important}
+  .pricing-quote strong{font-size:clamp(2rem,10vw,2.8rem)!important}
+}
