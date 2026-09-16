@@ -1,0 +1,24 @@
+N&K SCORING — PASOS DESPUÉS DE SUBIR ESTA VERSIÓN
+
+1. Sube el CONTENIDO de esta carpeta a la raíz del repositorio de GitHub.
+2. NO borres el archivo CNAME que ya tienes en GitHub.
+3. Espera a que GitHub Pages publique los cambios.
+4. Entra a Google Search Console:
+   https://search.google.com/search-console/
+5. Añade o verifica la propiedad nkscoring.com.
+6. En "Inspección de URL", revisa:
+   https://nkscoring.com/
+7. Pulsa "Solicitar indexación".
+8. En "Sitemaps", envía:
+   https://nkscoring.com/sitemap.xml
+9. Repite la inspección para:
+   https://nkscoring.com/licencias.html
+   https://nkscoring.com/nosotros.html
+
+NOTA:
+El favicon/logo de Google no cambia inmediatamente. Google debe volver a rastrear
+la página. Puede tardar varios días o más aunque los archivos ya estén correctos.
+
+
+VERSIÓN v28:
+Los planes N&K Pro, Event y Organization aparecen como 'Próximamente'.
